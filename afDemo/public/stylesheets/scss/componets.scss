@@ -1,0 +1,28 @@
+.block {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+
+  & > a {
+    color: $menu-base-color;
+  }
+}
+
+.vertical-navigation {
+  display: flex;
+  flex-direction: column;
+  & > a {
+    color: $menu-base-color;
+  }
+}
+
+.column {
+  background-color: $column-color;
+  width: 200px;
+}

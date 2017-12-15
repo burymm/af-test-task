@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var sassMiddleware = require('node-sass-middleware');
 
 /*var index = require('./routes/index');
 var users = require('./routes/users');*/
@@ -16,6 +17,16 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(sassMiddleware({
+    src: path.join(__dirname, 'public/stylesheets/scss'),
+    dest: path.join(__dirname, 'public/stylesheets'),
+    debug: true,
+    indentedSyntax: false,
+    outputStyle: process.env.NODE_ENV === 'dev' ? 'extended' : 'compressed',
+    prefix:  '/stylesheets',
+    log: function (severity, key, value) { console.log(severity, 'node-sass-middleware   %s : %s', key, value); }
+}));
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 

@@ -15,3 +15,10 @@
  - We will test on IE11+, FF, Chrome for modern browsers (mobile included)
  - Code style matters
  - Save your work in github
+ 
+## Instruction
+
+ - To run use in afDemo folder
+ ```
+ npm start
+ ```    
