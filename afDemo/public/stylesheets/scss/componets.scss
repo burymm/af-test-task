@@ -1,3 +1,18 @@
+@import "variables";
+
+.header-title {
+  margin-bottom: 20px;
+  border-bottom: 4px solid $column-color;
+
+  color: $content-text-color;
+  font-size: 18px;
+
+
+  &.invert {
+    border-color: $high-light-color;
+  }
+}
+
 .block {
   display: block;
   box-sizing: border-box;
