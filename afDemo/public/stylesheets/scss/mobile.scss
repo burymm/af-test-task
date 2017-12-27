@@ -1,0 +1,14 @@
+@media screen and (max-width: 480px) {
+
+  .content-container {
+    .content {
+      padding-bottom: 35px;
+    }
+
+    aside.column {
+      .sections {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@media screen and (max-width: 780px) {
+
+  .page-container {
+    header.block {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 20px;
+      height: 45px;
+
+      .logo {
+        .title {
+          line-height: 30px;
+          font-size: 30px;
+        }
+      }
+
+      .navigation-menu {
+        padding: 0;
+        align-items: center;
+      }
+    }
+  }
+
+  .content-container {
+    flex-direction: column;
+    height: 100%;
+
+    .full-navigation {
+      width: 100%;
+      flex-direction: row;
+      padding: 4px 13px;
+      box-sizing: border-box;
+      background-color: $menu-item-background;
+
+      &--item {
+        margin: 0 1px;
+        padding: 6px 9px;
+        height: 22px;
+        box-sizing: border-box;
+        line-height: 12px;
+      }
+    }
+
+    .content {
+      padding: 20px 20px 0 20px;
+      overflow: unset;
+    }
+
+    aside.column {
+      padding: 25px 20px 20px 20px;
+      width: 100%;
+      box-sizing: border-box;
+
+      .header-title {
+        margin-bottom: 15px;
+      }
+
+      .sections {
+        display: flex;
+        flex-direction: row;
+
+        section {
+          margin-right: 32px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
