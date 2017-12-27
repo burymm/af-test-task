@@ -23,5 +23,5 @@
  npm start
  ```    
  
- ## Time spend
+ ## Time spent
  5h
